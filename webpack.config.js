@@ -1,7 +1,14 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
-    plugins: [new MiniCssExtractPlugin()],
+    plugins: [
+        new MiniCssExtractPlugin(),
+        new BrowserSyncPlugin({
+            files: "**/*.php",
+            proxy: "http://localhost:8888", // your dev server here
+        }),
+    ],
 
     entry: './src/index.js',
     module: {
