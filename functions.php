@@ -9,8 +9,8 @@
  */
 
 function enqueue_theme_scripts() {
-    wp_enqueue_script("start-theme-js", get_theme_file_uri("dist/index.js"));
-    wp_enqueue_style("start-theme-style", get_theme_file_uri("dist/index.css"));
+    wp_enqueue_script("start-theme-js", get_theme_file_uri("dist/main.js"));
+    wp_enqueue_style("start-theme-style", get_theme_file_uri("dist/main.css"));
 }
 
 add_action("wp_enqueue_scripts", "enqueue_theme_scripts");
