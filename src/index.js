@@ -1,3 +1,3 @@
 import "tailwindcss/tailwind.css"
-import "./css/style.css"
+import "./css/style.scss"
 console.log("Hello world")
